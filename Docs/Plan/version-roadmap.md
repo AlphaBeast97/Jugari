@@ -9,6 +9,8 @@
 
 ## V0.1 — Basic Chat CLI
 
+> Full spec: [v0.1-basic-chat-cli.md](v0.1-basic-chat-cli.md)
+
 `node cli.js` starts a conversation. No tools — just a smart chat.
 
 **Capabilities:**
