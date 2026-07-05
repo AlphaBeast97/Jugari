@@ -1,4 +1,4 @@
-import OpenAI, { APIConnectionError, APIError } from "openai";
+import OpenAI, { APIConnectionError, APIError, RateLimitError } from "openai";
 import { JUGARI_MODEL, PROVIDER_API_KEY, PROVIDER_BASE_URL } from "./config.js";
 import { history, type HistoryEntry } from "./history.js";
 
@@ -69,6 +69,10 @@ export const llm = async (payload: LlmPayload): Promise<void> => {
     if (error instanceof APIConnectionError) {
       process.stderr.write(
         "Error: Could not connect to the provider. Check your internet connection and PROVIDER_BASE_URL.\n",
+      );
+    } else if (error instanceof RateLimitError) {
+      process.stderr.write(
+        "Error: Rate limit exceeded. Please try again later.\n",
       );
     } else if (error instanceof APIError) {
       process.stderr.write(

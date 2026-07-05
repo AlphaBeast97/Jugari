@@ -36,8 +36,6 @@ const main = async (): Promise<void> => {
       console.log(
         `Error: ${error instanceof Error ? error.message : String(error)}\n`,
       );
-    } finally {
-      usrMsg.close();
     }
   }
 };
