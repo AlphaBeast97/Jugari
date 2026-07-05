@@ -1,14 +1,24 @@
 {
   "name": "jugaricli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Broke but brilliant. A coding agent harness built for free-tier models. (in progress V0.1)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "coding-agent",
+    "llm",
+    "ai",
+    "harness",
+    "chat",
+    "nodejs",
+    "free-tier",
+    "jugaad"
+  ],
+  "author": "alphabeast97",
   "license": "GPL-3.0-only",
   "type": "module"
 }
