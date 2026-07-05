@@ -1,7 +1,7 @@
 {
   "name": "@alphabeast97/jugari",
-  "version": "0.0.1",
-  "description": "Broke but brilliant. A coding agent harness built for free-tier models. (in progress V0.0.1)",
+  "version": "0.0.2-ts.1",
+  "description": "Broke but brilliant. A coding agent harness built for free-tier models. (in progress V0.0.2-ts.1)",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
