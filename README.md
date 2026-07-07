@@ -1,14 +1,14 @@
 # Beast97
 
-> A coding agent harness — built by hand, for free-tier models. TypeScript. No pretense.
+> A coding agent CLI built by a solo developer. Works with any LLM.
 
 ---
 
 ## What It Is
 
-Beast97 is a CLI that wires an LLM (any OpenAI-compatible provider) to your codebase incrementally. It starts as a chat interface, grows into a tool-using agent that can read, write, search, and run commands in your project.
+Beast97 is a CLI that wires an LLM to your codebase. Under active development — version by version. Right now it's a streaming chat interface; the end goal is a full coding agent that can read, write, search, and run commands in your project.
 
-This is the kind of tool that Claude Code and Cursor are — but built from scratch, in the open, by a solo developer. No VC. No cloud credits. Just spare time and curiosity.
+This is the kind of tool that Claude Code and Cursor are — but built from scratch, in the open, by a solo developer. No VC. No cloud credits.
 
 ## Where It Is Now
 
@@ -24,18 +24,11 @@ Working features:
 
 **13 passing tests** — history, LLM mock, config validation, error handling.
 
-## Where It's Going
-
-- **V0.1** — Agent loop with mock tools (proving the orchestration mechanism)
-- **V0.2–V0.3** — Real file read/write tools (read, grep, edit, create files)
-- **V0.4** — Shell command execution with approval gates
-- **V0.5+** — Persistent sessions, context compaction, safety rings, full coding agent
-
-See the [full roadmap](Docs/Plan/version-roadmap.md) for details.
+See the [vision](Docs/vision.md) for the end-state features being built toward.
 
 ## Why "Beast97"
 
-Named after the creator's GitHub handle — **AlphaBeast97**. Dropping "Alpha" keeps it tight. The name says what it is: unapologetic, direct, and personal. No hiding behind a thesaurus noun.
+Named after the creator's GitHub handle — **AlphaBeast97**. "Beast" says what it is: capable, direct, untamed. "97" grounds it in a real person.
 
 ## Quick Start
 

@@ -2,7 +2,7 @@
 
 > Resource: [What is an Agent Harness? and How to build a great one!](https://www.youtube.com/watch?v=nWzXyjXCoCE)
 >
-> Project name: [Beast97 — why?](../Decisions/name-choice.md)
+> Project name: [Beast97 — why?](../identity.md)
 
 ## Contents
 
@@ -21,7 +21,7 @@
   7. [System Prompt Assembly](#7-system-prompt-assembly)
   8. [Lifecycle Hooks](#8-lifecycle-hooks)
   9. [Permissions & Safety](#9-permissions--safety)
-- [Pre-Development Decisions](../Decisions/pre-development-decisions.md)
+- [Project Identity](../identity.md)
 
 ---
 
@@ -300,8 +300,4 @@ flowchart LR
 
 This is at least the basics of it.
 
----
 
-## Pre-Development Decisions
-
-> Moved to [Decisions/pre-development-decisions.md](../Decisions/pre-development-decisions.md)
