@@ -5,7 +5,7 @@ experience (OpenCode-class, but built by one developer).
 
 ## Must-have features
 
-- [ ] Agent loop — read prompt, decide tool, execute, feed back, repeat
+- [x] Agent loop design — see [architecture](architecture.md) for the detailed spec
 - [ ] File tools — read, write, edit, grep, glob
 - [ ] Shell tool — run commands with permission gating
 - [ ] Multi-provider — not just OpenAI SDK; any provider, any model

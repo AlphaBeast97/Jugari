@@ -1,7 +1,7 @@
 {
   "name": "@alphabeast97/beast97",
   "version": "0.0.2-ts.1",
-  "description": "Broke but brilliant. A coding agent harness built for free-tier models. (in progress V0.0.2-ts.1)",
+  "description": "A CLI tool for harnessing the power of LLMs in coding tasks.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -19,16 +19,15 @@
     "ai",
     "harness",
     "chat",
-    "nodejs",
-    "free-tier",
-    "jugaad"
+    "nodejs"
   ],
   "author": "alphabeast97",
   "license": "GPL-3.0-only",
   "type": "module",
   "dependencies": {
     "dotenv": "^17.4.2",
-    "openai": "^6.45.0"
+    "openai": "^6.45.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^26.1.0",

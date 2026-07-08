@@ -3,7 +3,7 @@
 import "dotenv/config";
 import { readFileSync } from "node:fs";
 import { llm } from "./llm.js";
-import { JUGARI_MODEL, PROVIDER_BASE_URL } from "./config.js";
+import { config } from "./config/index.js";
 import rl from "readline/promises";
 import { stdin, stdout } from "node:process";
 import type { HistoryEntry } from "./history.js";
@@ -24,7 +24,7 @@ const main = async (): Promise<void> => {
   });
 
   console.log(
-    `\n${pkg.name} v${pkg.version} — model: ${JUGARI_MODEL}, provider: ${PROVIDER_BASE_URL}`,
+    `\n${pkg.name} v${pkg.version} — model: ${config.MODEL}, provider: ${config.PROVIDER_BASE_URL}`,
   );
   console.log("\u2500".repeat(60));
 

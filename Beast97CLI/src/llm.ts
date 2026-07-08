@@ -1,10 +1,10 @@
 import OpenAI, { APIConnectionError, APIError, RateLimitError } from "openai";
-import { JUGARI_MODEL, PROVIDER_API_KEY, PROVIDER_BASE_URL } from "./config.js";
+import { config } from "./config/index.js";
 import { history, type HistoryEntry } from "./history.js";
 
 const openai = new OpenAI({
-  baseURL: PROVIDER_BASE_URL,
-  apiKey: PROVIDER_API_KEY,
+  baseURL: config.PROVIDER_BASE_URL,
+  apiKey: config.PROVIDER_API_KEY,
   defaultHeaders: {
     "HTTP-Referer": "https://github.com/alphaBeast97/beast97",
     "X-Title": "Beast97",
@@ -33,7 +33,7 @@ export const llm = async (payload: LlmPayload): Promise<void> => {
 
   try {
     const completion = await openai.chat.completions.create({
-      model: JUGARI_MODEL,
+      model: config.MODEL,
       messages: [
         {
           role: "system",
